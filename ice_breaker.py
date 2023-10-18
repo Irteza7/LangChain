@@ -27,12 +27,13 @@ if __name__ == "__main__":
     )
 
     llm = ChatOpenAI(
-        temperature=0.2, model="gpt-3.5-turbo", openai_api_key=settings.openai_api_key
+        temperature=0, model="gpt-3.5-turbo", openai_api_key=settings.openai_api_key
     )
 
     chain = LLMChain(llm=llm, prompt=summary_prompt_template)
 
-    linkedin_url = linkedin_lookup_agent(name="M. Irteza Khan")
+    linkedin_url = linkedin_lookup_agent(name="M. Irteza Khan Germany")
+    print(linkedin_url)
 
     linkdin_data = scrape_linkedin_profile_gist(
         "https://gist.githubusercontent.com/Irteza7/16ba2fa6b8f9f5b00c95a2d139f428e7/raw/fda63aab2a0a9ce533aec555f0332710984db4de/gistfile1.txt"

@@ -9,6 +9,7 @@ pydantic = "*"
 pydantic-settings = "*"
 openai = "*"
 black = "*"
+google-search-results = "*"
 
 [dev-packages]
 

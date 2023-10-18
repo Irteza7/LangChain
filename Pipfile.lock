@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "93b507153cef0858c7ac1ed35df3cc5e72a5459bc94885c565754a7be4c1fb87"
+            "sha256": "f789ce92a9f818def8fdec895954a852307c40317e84525c4620bd572bb4c0fc"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -369,6 +369,14 @@
             "markers": "python_version >= '3.8'",
             "version": "==1.4.0"
         },
+        "google-search-results": {
+            "hashes": [
+                "sha256:603a30ecae2af8e600b22635757a6df275dad4b934f975e67878ccd640b78245"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.5'",
+            "version": "==2.4.2"
+        },
         "greenlet": {
             "hashes": [
                 "sha256:02a807b2a58d5cdebb07050efe3d7deaf915468d112dfcf5e426d0564aa3aa4a",
@@ -463,20 +471,20 @@
         },
         "langchain": {
             "hashes": [
-                "sha256:732c958d41e22a5bb55f8c0cb70914793f083d175739d476e5cbbc7715703153",
-                "sha256:997d2ecdaf481517c90dcea86f93b98327546c357ac8f581f06d7d782a2eda2d"
+                "sha256:bca76a7d9fbf18bc284b1bf8884c3a88c8f17dc8168ba2123132033b0efdd8df",
+                "sha256:c0e0e835e749d62af86340a3e07fb10d65c9e0c8f66a2d443cded81dbb85835a"
             ],
             "index": "pypi",
             "markers": "python_version < '4.0' and python_full_version >= '3.8.1'",
-            "version": "==0.0.316"
+            "version": "==0.0.317"
         },
         "langsmith": {
             "hashes": [
-                "sha256:5e7e5b45360ce89a2d5d6066a3b9fdd31b1f874a0cf19b1666c9792fecef0a1b",
-                "sha256:74a262ba23a958ca1a4863d5386c151be462e40ccfcb8b39d0a5d8c9eaa40164"
+                "sha256:65a9f22ff504fa6b62236e3fdaae9060c30ae14ed9b6d1945837a4695e8bfeea",
+                "sha256:9ca35719fab7caf3367bc0fcd636c670c83edbf0fe9de5c7a38bf37767fd62f0"
             ],
             "markers": "python_version < '4.0' and python_full_version >= '3.8.1'",
-            "version": "==0.0.44"
+            "version": "==0.0.46"
         },
         "marshmallow": {
             "hashes": [
@@ -939,7 +947,7 @@
                 "sha256:8f92fc8806f9a6b641eaa5318da32b44d401efaac0f6678c9bc448ba3605faa0",
                 "sha256:df8e4339e9cb77357558cbdbceca33c303714cf861d1eef15e1070055ae8b7ef"
             ],
-            "markers": "python_version >= '3.8'",
+            "markers": "python_version < '3.11'",
             "version": "==4.8.0"
         },
         "typing-inspect": {

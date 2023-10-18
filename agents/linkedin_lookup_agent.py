@@ -3,6 +3,7 @@ from langchain import PromptTemplate
 from langchain.chat_models import ChatOpenAI
 from langchain.agents import initialize_agent, Tool, AgentType
 from config import settings
+from tools.tools import get_profile_url
 
 
 def lookup(name: str) -> str:
@@ -10,13 +11,13 @@ def lookup(name: str) -> str:
         temperature=0, model="gpt-3.5-turbo", openai_api_key=settings.openai_api_key
     )
     template = """given full name {name_of_person} I want you to get me a link to their LinkedIn profile page.
-      Your answer should only contain the URL"""
+      Your answer should only contain the URL of the profile page and nothing else"""
 
     tools_for_agent = [
         Tool(
             name="Crawl Google 4 LinkedIn profile page",
-            func="?",
-            desciption="useful for when you need to get the LinkedIn page URL",
+            func=get_profile_url,
+            description="useful for when you need to get the LinkedIn page URL",
         )
     ]
 
